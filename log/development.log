@@ -34,3 +34,48 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 1616ms (Views: 1607.2ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-22 00:49:41 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (6.6ms)
+Completed 500 Internal Server Error in 3775ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery' with type 'application/javascript'
+Checked in these paths: 
+  /home/sy/Documents/ESPN_Forum/app/assets/config
+  /home/sy/Documents/ESPN_Forum/app/assets/images
+  /home/sy/Documents/ESPN_Forum/app/assets/javascripts
+  /home/sy/Documents/ESPN_Forum/app/assets/stylesheets
+  /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actioncable-5.2.1/lib/assets/compiled
+  /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activestorage-5.2.1/app/assets/javascripts
+  /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/actionview-5.2.1/lib/assets/compiled
+  /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/turbolinks-source-5.2.0/lib/assets/javascripts
+  /home/sy/Documents/ESPN_Forum/node_modules
+  /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.4.1/assets/stylesheets
+  /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.4.1/assets/javascripts
+  /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.4.1/assets/fonts
+  /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/bootstrap-sass-3.3.4.1/assets/images):
+     5:     <%= csrf_meta_tags %>
+     6:     <%= csp_meta_tag %>
+     7: 
+     8:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:   </head>
+    11: 
+  
+app/assets/javascripts/application.js:13
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb___4610405771973405965_47338848599400'
+Started GET "/" for 127.0.0.1 at 2018-11-22 00:50:41 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.erb within layouts/application
+  Rendered messages/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 2589ms (Views: 2580.3ms | ActiveRecord: 0.0ms)
+
+
