@@ -154,3 +154,887 @@ Processing by MessagesController#index as HTML
 Completed 200 OK in 55ms (Views: 53.5ms | ActiveRecord: 0.0ms)
 
 
+Started GET "/" for 127.0.0.1 at 2018-11-22 23:54:55 +0700
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /home/sy/.rbenv/versions/2.5.1/lib/ruby/gems/2.5.0/gems/activerecord-5.2.1/lib/active_record/log_subscriber.rb:98
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (39.2ms)
+Completed 200 OK in 770ms (Views: 762.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-22 23:55:06 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (3.1ms)
+Completed 200 OK in 84ms (Views: 82.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-22 23:57:42 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/new.html.haml within layouts/application (2.1ms)
+Completed 200 OK in 143ms (Views: 73.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-22 23:57:55 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/new.html.haml within layouts/application (3.4ms)
+Completed 200 OK in 98ms (Views: 94.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-22 23:58:43 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/new.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 94ms (Views: 89.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-23 00:01:18 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/_form.html.haml (50.0ms)
+  Rendered messages/new.html.haml within layouts/application (56.6ms)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: nesting within plain text is illegal.):
+    1: <%= simple_form_for @message do |f| %>
+    2:   <%= f.input :title, label: "Message Title" %>
+    3:   <%= f.input :description %>
+    4:   <%= f.button :submit %>
+    5: <% end %>
+  
+app/views/messages/_form.html.haml:2:in `_app_views_messages__form_html_haml__2064412673877322571_70101437600440'
+app/views/messages/new.html.haml:3:in `_app_views_messages_new_html_haml__2849652175394494753_70101437716220'
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-23 00:02:14 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/_form.html.haml (5.5ms)
+  Rendered messages/new.html.haml within layouts/application (15.3ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/_form.html.haml:5: syntax error, unexpected keyword_end
+..._s)); _hamlit_compiler5 = ( end; 
+...                            ^~~
+/home/sy/Documents/ESPN_Forum/app/views/messages/_form.html.haml:7: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/sy/Documents/ESPN_Forum/app/views/messages/_form.html.haml:9: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/messages/_form.html.haml:5: syntax error, unexpected keyword_end
+app/views/messages/_form.html.haml:7: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/messages/_form.html.haml:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/messages/new.html.haml:3:in `_app_views_messages_new_html_haml__2849652175394494753_70101437882660'
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-23 00:04:12 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/_form.html.haml (4.5ms)
+  Rendered messages/new.html.haml within layouts/application (9.1ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/_form.html.haml:5: syntax error, unexpected keyword_end
+..._s)); _hamlit_compiler5 = ( end; 
+...                            ^~~
+/home/sy/Documents/ESPN_Forum/app/views/messages/_form.html.haml:7: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/sy/Documents/ESPN_Forum/app/views/messages/_form.html.haml:9: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/messages/_form.html.haml:5: syntax error, unexpected keyword_end
+app/views/messages/_form.html.haml:7: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/messages/_form.html.haml:9: syntax error, unexpected keyword_end, expecting ')'
+app/views/messages/new.html.haml:3:in `_app_views_messages_new_html_haml__2849652175394494753_70101434099460'
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-23 00:06:46 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/_form.html.haml (201.9ms)
+  Rendered messages/new.html.haml within layouts/application (205.9ms)
+Completed 200 OK in 284ms (Views: 282.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-23 00:13:15 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/_form.html.haml (7.3ms)
+  Rendered messages/new.html.haml within layouts/application (12.9ms)
+Completed 200 OK in 81ms (Views: 72.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:13:19 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/index.html.haml:6: syntax error, unexpected '='
+...o "Join Convo", message, class="btn-custom"; 
+...                              ^):
+  
+app/views/messages/index.html.haml:6: syntax error, unexpected '='
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:13:42 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (17.1ms)
+Completed 200 OK in 83ms (Views: 80.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-23 00:14:22 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/_form.html.haml (10.4ms)
+  Rendered messages/new.html.haml within layouts/application (14.4ms)
+Completed 200 OK in 70ms (Views: 67.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:16:37 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 17ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/index.html.haml:6: syntax error, unexpected '='
+...o "Join Convo", message, class="btn-custom"; 
+...                              ^):
+  
+app/views/messages/index.html.haml:6: syntax error, unexpected '='
+Started POST "/messages" for 127.0.0.1 at 2018-11-23 00:17:40 +0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4z/RRR4UV4WgTai50Mcu0thDLb+pl1JWR54OETAZ7I7cJFCkYduBEJAJw+NkaOiSRaTtoCDr97LtJ01sR7mkHQ==", "message"=>{"title"=>"First Post", "description"=>"I am the first post message, please show me in the heaven"}, "commit"=>"Create Message"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:13
+  [1m[36mMessage Create (0.8ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "First Post"], ["description", "I am the first post message, please show me in the heaven"], ["created_at", "2018-11-22 17:17:40.159138"], ["updated_at", "2018-11-22 17:17:40.159138"]]
+  ↳ app/controllers/messages_controller.rb:13
+  [1m[35m (157.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:13
+Redirected to http://localhost:3000/
+Completed 302 Found in 163ms (ActiveRecord: 158.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:17:40 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (4.8ms)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/index.html.haml:6: syntax error, unexpected '='
+...o "Join Convo", message, class="btn-custom"; 
+...                              ^):
+  
+app/views/messages/index.html.haml:6: syntax error, unexpected '='
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:17:53 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (5.1ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/index.html.haml:6: syntax error, unexpected '='
+...o "First Post", message, class="btn-custom"; 
+...                              ^):
+  
+app/views/messages/index.html.haml:6: syntax error, unexpected '='
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:17:55 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/index.html.haml:6: syntax error, unexpected '='
+...o "First Post", message, class="btn-custom"; 
+...                              ^):
+  
+app/views/messages/index.html.haml:6: syntax error, unexpected '='
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:18:02 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 81ms (Views: 78.1ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 00:20:46 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (1.5ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+Completed 406 Not Acceptable in 99ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionController::UnknownFormat (MessagesController#show is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.0.6) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.0.6) lib/rack/etag.rb:25:in `call'
+rack (2.0.6) lib/rack/conditional_get.rb:25:in `call'
+rack (2.0.6) lib/rack/head.rb:12:in `call'
+actionpack (5.2.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.0.6) lib/rack/session/abstract/id.rb:232:in `context'
+rack (2.0.6) lib/rack/session/abstract/id.rb:226:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/method_override.rb:22:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 00:28:20 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (5.7ms)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (Illegal nesting: content can't be both given on the same line as %p and nested within it.):
+    2:   .message-show
+    3:     %h2=@message.title
+    4:     %p.message-posted-by= time_ago_in_words(@message.created_at)
+    5:       Ago
+    6:     %p.message-desc=@message.description
+    7: 
+    8:     .link.btn-group
+  
+app/views/messages/show.html.haml:5:in `_app_views_messages_show_html_haml__1292214325691962805_46980779565400'
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 00:28:30 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (6.0ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/show.html.haml:4: syntax error, unexpected tCONSTANT, expecting ')'
+..._words(@message.created_at) Ago; 
+...                            ^~~):
+  
+app/views/messages/show.html.haml:4: syntax error, unexpected tCONSTANT, expecting ')'
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 00:29:00 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (6.8ms)
+Completed 200 OK in 66ms (Views: 63.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 00:29:16 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (7.5ms)
+Completed 200 OK in 81ms (Views: 78.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:29:37 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 72ms (Views: 70.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 00:30:06 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (15.6ms)
+Completed 200 OK in 124ms (Views: 120.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 00:30:09 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (5.3ms)
+Completed 200 OK in 67ms (Views: 65.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 00:30:32 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (4.3ms)
+Completed 200 OK in 67ms (Views: 64.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2018-11-23 00:31:01 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (5.4ms)
+Completed 200 OK in 75ms (Views: 73.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2018-11-23 00:42:07 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 73ms (Views: 68.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:45:56 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (5.6ms)
+Completed 200 OK in 68ms (Views: 66.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/new" for 127.0.0.1 at 2018-11-23 00:45:58 +0700
+Processing by MessagesController#new as HTML
+  Rendering messages/new.html.haml within layouts/application
+  Rendered messages/_form.html.haml (11.3ms)
+  Rendered messages/new.html.haml within layouts/application (15.1ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/messages" for 127.0.0.1 at 2018-11-23 00:46:20 +0700
+Processing by MessagesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"n2O+WlE6tfI7lFqQiiA5/CcvHnEKKSTNNPodIMsDDl4oHS9pVZgcZCfeTEpHIsT0SKfKCluLQ7YaZkt0go+Kmg==", "message"=>{"title"=>"How do you about the Sunday match?", "description"=>"Lorem ipsum dolor amet green juice lo-fi direct trade disrupt cillum fam normcore vice sed echo park in subway tile dreamcatcher quis poutine. 8-bit minim twee church-key, fixie banh mi ad microdosing selvage fashion axe whatever poke. Single-origin coffee ennui seitan banh mi dolore, celiac snackwave locavore aute williamsburg chambray. Irony austin tumblr mlkshk green juice vape four dollar toast shoreditch keytar in portland incididunt pug. In narwhal enim, fashion axe non iceland chillwave food truck. Seitan single-origin coffee do aliquip, minim prism brooklyn fanny pack aesthetic. Four dollar toast helvetica tacos ut laboris enim.\r\n\r\nDo pok pok four dollar toast, palo santo enamel pin af esse you probably haven't heard of them selvage reprehenderit occaecat chambray leggings ethical cillum. Palo santo flexitarian vegan twee vexillologist, ugh aliqua heirloom drinking vinegar glossier locavore. Mlkshk fam helvetica do ea gastropub. Photo booth vice farm-to-table viral, in consectetur reprehenderit gentrify laboris subway tile pork belly.\r\n\r\nCillum XOXO do farm-to-table chambray man braid. Officia neutra banh mi godard you probably haven't heard of them ramps vice copper mug blog. Hashtag health goth tattooed kinfolk, ut street art photo booth +1. Schlitz hammock pinterest lumbersexual XOXO venmo mixtape squid ullamco vinyl ethical. Listicle id lyft iPhone +1 keffiyeh chillwave vegan squid est. Sint mixtape shoreditch cronut ut tumeric portland seitan typewriter pop-up ramps cornhole waistcoat humblebrag tempor."}, "commit"=>"Create Message"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:17
+  [1m[36mMessage Create (0.9ms)[0m  [1m[32mINSERT INTO "messages" ("title", "description", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["title", "How do you about the Sunday match?"], ["description", "Lorem ipsum dolor amet green juice lo-fi direct trade disrupt cillum fam normcore vice sed echo park in subway tile dreamcatcher quis poutine. 8-bit minim twee church-key, fixie banh mi ad microdosing selvage fashion axe whatever poke. Single-origin coffee ennui seitan banh mi dolore, celiac snackwave locavore aute williamsburg chambray. Irony austin tumblr mlkshk green juice vape four dollar toast shoreditch keytar in portland incididunt pug. In narwhal enim, fashion axe non iceland chillwave food truck. Seitan single-origin coffee do aliquip, minim prism brooklyn fanny pack aesthetic. Four dollar toast helvetica tacos ut laboris enim.\r\n\r\nDo pok pok four dollar toast, palo santo enamel pin af esse you probably haven't heard of them selvage reprehenderit occaecat chambray leggings ethical cillum. Palo santo flexitarian vegan twee vexillologist, ugh aliqua heirloom drinking vinegar glossier locavore. Mlkshk fam helvetica do ea gastropub. Photo booth vice farm-to-table viral, in consectetur reprehenderit gentrify laboris subway tile pork belly.\r\n\r\nCillum XOXO do farm-to-table chambray man braid. Officia neutra banh mi godard you probably haven't heard of them ramps vice copper mug blog. Hashtag health goth tattooed kinfolk, ut street art photo booth +1. Schlitz hammock pinterest lumbersexual XOXO venmo mixtape squid ullamco vinyl ethical. Listicle id lyft iPhone +1 keffiyeh chillwave vegan squid est. Sint mixtape shoreditch cronut ut tumeric portland seitan typewriter pop-up ramps cornhole waistcoat humblebrag tempor."], ["created_at", "2018-11-22 17:46:20.593514"], ["updated_at", "2018-11-22 17:46:20.593514"]]
+  ↳ app/controllers/messages_controller.rb:17
+  [1m[35m (221.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:17
+Redirected to http://localhost:3000/
+Completed 302 Found in 231ms (ActiveRecord: 222.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:46:20 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (7.8ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:47:30 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (10.4ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/index.html.haml:5: syntax error, unexpected '='
+...to "Show Post", message, class="btn-custom"; 
+...                              ^):
+  
+app/views/messages/index.html.haml:5: syntax error, unexpected '='
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:49:22 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.8ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (18.0ms)
+Completed 200 OK in 81ms (Views: 77.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2018-11-23 00:49:59 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 64ms (Views: 61.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:50:04 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 00:50:06 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (5.2ms)
+Completed 200 OK in 62ms (Views: 58.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:50:07 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 73ms (Views: 71.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/2" for 127.0.0.1 at 2018-11-23 00:50:08 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (5.7ms)
+Completed 200 OK in 66ms (Views: 63.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:50:10 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (7.7ms)
+Completed 200 OK in 69ms (Views: 66.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2018-11-23 00:50:12 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (7.1ms)
+Completed 200 OK in 62ms (Views: 59.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:50:14 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 64ms (Views: 61.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:51:59 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (6.5ms)
+Completed 200 OK in 76ms (Views: 74.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:52:21 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (9.3ms)
+Completed 200 OK in 68ms (Views: 66.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:52:37 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (11.8ms)
+Completed 200 OK in 82ms (Views: 79.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:52:47 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (7.0ms)
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:53:03 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (9.2ms)
+Completed 200 OK in 72ms (Views: 68.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2018-11-23 00:53:27 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:7
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (17.6ms)
+Completed 200 OK in 76ms (Views: 73.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:53:30 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (9.4ms)
+Completed 200 OK in 82ms (Views: 79.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:53:38 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.7ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (13.5ms)
+Completed 200 OK in 90ms (Views: 88.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:53:57 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (8.1ms)
+Completed 200 OK in 77ms (Views: 74.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:54:28 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (2.6ms)
+Completed 200 OK in 80ms (Views: 78.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:54:41 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  Rendered messages/index.html.haml within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.0ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/index.html.haml:2: syntax error, unexpected ')', expecting keyword_end
+; ); @output_buffer.safe_concat(...
+  ^
+/home/sy/Documents/ESPN_Forum/app/views/messages/index.html.haml:3: syntax error, unexpected keyword_ensure, expecting ')'
+          ensure
+          ^~~~~~
+/home/sy/Documents/ESPN_Forum/app/views/messages/index.html.haml:5: syntax error, unexpected keyword_end, expecting ')'
+          end
+          ^~~):
+  
+app/views/messages/index.html.haml:2: syntax error, unexpected ')', expecting keyword_end
+app/views/messages/index.html.haml:3: syntax error, unexpected keyword_ensure, expecting ')'
+app/views/messages/index.html.haml:5: syntax error, unexpected keyword_end, expecting ')'
+Started GET "/" for 127.0.0.1 at 2018-11-23 00:54:54 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (6.2ms)
+Completed 200 OK in 77ms (Views: 75.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 01:03:01 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (15.3ms)
+Completed 200 OK in 100ms (Views: 97.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2018-11-23 01:03:03 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (1.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (16.7ms)
+Completed 200 OK in 110ms (Views: 106.3ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/messages/3/edit" for 127.0.0.1 at 2018-11-23 01:03:07 +0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/edit.html.haml within layouts/application
+  Rendered messages/edit.html.haml within layouts/application (4.6ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/home/sy/Documents/ESPN_Forum/app/views/messages/edit.html.haml:3: syntax error, unexpected '='
+; _hamlit_compiler1 = ( = render 'form'; 
+                        ^):
+  
+app/views/messages/edit.html.haml:3: syntax error, unexpected '='
+Started GET "/messages/3/edit" for 127.0.0.1 at 2018-11-23 01:03:18 +0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/edit.html.haml within layouts/application
+  Rendered messages/_form.html.haml (10.1ms)
+  Rendered messages/edit.html.haml within layouts/application (14.6ms)
+Completed 200 OK in 71ms (Views: 67.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/3/edit" for 127.0.0.1 at 2018-11-23 01:05:21 +0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.1ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/edit.html.haml within layouts/application
+  Rendered messages/_form.html.haml (9.2ms)
+  Rendered messages/edit.html.haml within layouts/application (12.1ms)
+Completed 200 OK in 91ms (Views: 89.1ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 01:05:27 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (8.6ms)
+Completed 200 OK in 57ms (Views: 54.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 01:05:29 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (6.4ms)
+Completed 200 OK in 63ms (Views: 60.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2018-11-23 01:05:35 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (6.0ms)
+Completed 200 OK in 61ms (Views: 59.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/3/edit" for 127.0.0.1 at 2018-11-23 01:05:37 +0700
+Processing by MessagesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/edit.html.haml within layouts/application
+  Rendered messages/_form.html.haml (11.2ms)
+  Rendered messages/edit.html.haml within layouts/application (14.8ms)
+Completed 200 OK in 71ms (Views: 68.6ms | ActiveRecord: 0.3ms)
+
+
+Started PATCH "/messages/3" for 127.0.0.1 at 2018-11-23 01:05:41 +0700
+Processing by MessagesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pcLdsCKUYO+PwTp57foL3rQiHWeGggVi7LE2L5uMJUyyd1mdgiqKftPi8KjpuTiViURE1ZZU0tt3IRg8mcyU3Q==", "message"=>{"title"=>"How do you about the Sunday match?", "description"=>"Lorem ipsum dolor amet green juice lo-fi direct trade disrupt cillum fam normcore vice sed echo park in subway tile dreamcatcher quis poutine. 8-bit minim twee church-key, fixie banh mi ad microdosing selvage fashion axe whatever poke. Single-origin coffee ennui seitan banh mi dolore, celiac snackwave locavore aute williamsburg chambray. Irony austin tumblr mlkshk green juice vape four dollar toast shoreditch keytar in portland incididunt pug. In narwhal enim, fashion axe non iceland chillwave food truck. Seitan single-origin coffee do aliquip, minim prism brooklyn fanny pack aesthetic. Four dollar toast helvetica tacos ut laboris enim.\r\n\r\nDo pok pok four dollar toast, palo santo enamel pin af esse you probably haven't heard of them selvage reprehenderit occaecat chambray leggings ethical cillum. Palo santo flexitarian vegan twee vexillologist, ugh aliqua heirloom drinking vinegar glossier locavore. Mlkshk fam helvetica do ea gastropub. Photo booth vice farm-to-table viral, in consectetur reprehenderit gentrify laboris subway tile pork belly.\r\n\r\nCillum XOXO do farm-to-table chambray man braid. Officia neutra banh mi godard you probably haven't heard of them ramps vice copper mug blog. Hashtag health goth tattooed kinfolk, ut street art photo booth +1. Schlitz hammock pinterest lumbersexual XOXO venmo mixtape squid ullamco vinyl ethical. Listicle id lyft iPhone +1 keffiyeh chillwave vegan squid est. Sint mixtape shoreditch cronut ut tumeric portland seitan typewriter pop-up ramps cornhole waistcoat humblebrag tempor."}, "commit"=>"Update Message", "id"=>"3"}
+  [1m[36mMessage Load (0.4ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:29
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:29
+Redirected to http://localhost:3000/messages/3
+Completed 302 Found in 7ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2018-11-23 01:05:41 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:47
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (7.6ms)
+Completed 200 OK in 78ms (Views: 76.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 01:05:44 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (6.3ms)
+Completed 200 OK in 56ms (Views: 54.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 01:09:34 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (12.7ms)
+Completed 200 OK in 92ms (Views: 89.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/messages/3" for 127.0.0.1 at 2018-11-23 01:09:36 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:48
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (245.4ms)
+Completed 500 Internal Server Error in 249ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `delete' for #<#<Class:0x00007f8384a44660>:0x00007f83863bf798>):
+     9:     .link.btn-group
+    10:       = link_to "Back", root_path, class:"btn btn-default"
+    11:       = link_to "Edit", edit_message_path(@message), class:"btn btn-primary"
+    12:       = link_to "Delete", message_path(@message), method: delete, data:{ confirm: "Are you sure?" }, class:"btn btn-danger"
+  
+app/views/messages/show.html.haml:12:in `_app_views_messages_show_html_haml__1292214325691962805_70101434761740'
+Started GET "/messages/3" for 127.0.0.1 at 2018-11-23 01:10:19 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:48
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (9.1ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 01:10:26 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.2ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (5.5ms)
+Completed 200 OK in 58ms (Views: 57.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/messages/1" for 127.0.0.1 at 2018-11-23 01:10:27 +0700
+Processing by MessagesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:48
+  Rendering messages/show.html.haml within layouts/application
+  Rendered messages/show.html.haml within layouts/application (6.1ms)
+Completed 200 OK in 73ms (Views: 70.8ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/messages/1" for 127.0.0.1 at 2018-11-23 01:10:32 +0700
+Processing by MessagesController#destroy as HTML
+  Parameters: {"authenticity_token"=>"5XnAaDPIYbLA05CiNaQJrqCMVICJIbMR9NTf+8e/pWLaYkGJTAe3J/CX+/iBC8/uPWuUnwBdFvVebZyGsB/t8Q==", "id"=>"1"}
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT  "messages".* FROM "messages" WHERE "messages"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/messages_controller.rb:48
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/messages_controller.rb:37
+  [1m[36mMessage Destroy (1.0ms)[0m  [1m[31mDELETE FROM "messages" WHERE "messages"."id" = ?[0m  [["id", 1]]
+  ↳ app/controllers/messages_controller.rb:37
+  [1m[35m (65.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/messages_controller.rb:37
+Redirected to http://localhost:3000/
+Completed 302 Found in 72ms (ActiveRecord: 67.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-11-23 01:10:32 +0700
+Processing by MessagesController#index as HTML
+  Rendering messages/index.html.haml within layouts/application
+  [1m[36mMessage Load (0.3ms)[0m  [1m[34mSELECT "messages".* FROM "messages" ORDER BY created_at DESC[0m
+  ↳ app/views/messages/index.html.haml:1
+  Rendered messages/index.html.haml within layouts/application (7.9ms)
+Completed 200 OK in 72ms (Views: 69.8ms | ActiveRecord: 0.3ms)
+
+
