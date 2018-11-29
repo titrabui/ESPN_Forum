@@ -6,7 +6,14 @@
       ago
     %p.message-desc= @message.description
 
+    %h3.comment-section-header Comments:
+    %p= render @message.comments
+
+    %h3.reply-to-msg Join Discusstion:
+    = render 'comments/form'
+
     .link.btn-group
       = link_to "Back", root_path, class:"btn btn-default"
-      = link_to "Edit", edit_message_path(@message), class:"btn btn-warning"
-      = link_to "Delete", message_path(@message), method: :delete, data:{ confirm: "Are you sure?" }, class:"btn btn-danger"
+      = if user_signed_in? && @message.user_id == current_user.id
+        = link_to "Edit", edit_message_path(@message), class:"btn btn-warning"
+        = link_to "Delete", message_path(@message), method: :delete, data:{ confirm: "Are you sure?" }, class:"btn btn-danger"
