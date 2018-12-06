@@ -6,10 +6,10 @@
       ago
     %p.message-desc= @message.description
 
-    %h3.comment-section-header Comments:
-    %p= render @message.comments
+    = if @message.comments.present? && @message.comments.size > 0
+      %h3.comment-section-header Comments:
+      %p= render @message.comments
 
-    %h3.reply-to-msg Join Discusstion:
     = render 'comments/form'
 
     .link.btn-group
