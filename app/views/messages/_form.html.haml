@@ -1,4 +1,5 @@
 = simple_form_for @message do |f|
   = f.input :title, label: "Message Title"
-  = f.input :description
+  .form-group
+    = f.input :description, :as => :ckeditor, input_html: {:ckeditor => {:toolbar => 'FULL'}}, class: "form-control"
   = f.button :submit
