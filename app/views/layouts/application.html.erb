@@ -10,32 +10,41 @@
   </head>
 
   <body>
-    <nav class="navbar navbar-default">
+    <nav class="navbar navbar-default" style="margin-bottom: 0;">
       <div class="container">
         <div class="navbar-header">
           <%= link_to "ESPN FAN FORUM", root_path, class: "navbar-brand" %>
         </div>
 
-        <ul class="navbar-nav nav navbar-right">
+        <ul class="navbar-nav nav navbar-right" style="margin-top: 8px">
           <% if user_signed_in? %>
-            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete %></li>
+            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "espn-btn espn-btn-default" %></li>
           <% else %>
-            <li><%= link_to "Log In", new_user_session_path %></li>
-            <li><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li style="margin-right: 5px"><%= link_to "Log In", new_user_session_path, class: "espn-btn espn-btn-default" %></li>
+            <li><%= link_to "Sign Up", new_user_registration_path, class: "espn-btn espn-btn-primary" %></li>
           <% end %>
         </ul>
 
         <% if user_signed_in? %>
-          <p><%= link_to "Post News", new_message_path, class: "navbar-text navbar-link" %></p>
+          <p><%= link_to "Post News", new_message_path, class: "navbar-text espn-btn espn-btn-primary" %></p>
         <% end %>
       </div>
     </nav>
 
-    <p class="notice"><%= notice %></p>
-    <p class="alert"><%= alert %></p>
+    <% if current_page?(root_path)%>
+      <nav class="navbar">
+        <img style="width: 100%; height: 400px; max-width:100%; max-height:100%;background-position: center center; background-repeat: no-repeat;" src="<%= image_path("abc.jpeg") %>" class="img-fluid" alt="Responsive image">
+      </nav>
+    <% end %>
 
     <div class="container">
       <%= yield %>
     </div>
+    <footer class="blog-footer">
+      <p>ESPN Forum by <a href="https://twitter.com/mdo">@titrabui</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
   </body>
 </html>

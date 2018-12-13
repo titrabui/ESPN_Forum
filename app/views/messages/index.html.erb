@@ -1,8 +1,8 @@
 <% @messages.each do |message| %>
 	<div class="col-md-10 col-md-offset-1">
 		<div class="message">
-			<h2 class="message-title"><%= message.title %></h2>
-			<%= link_to "Join Convo", message, class: "btn-custom" %>
+			<h2 class="message-title"><%= link_to message.title, message %></h2>
+			<p class="message-desc"><%= truncate(message.sub_title, :length => 80) %></p>
 		</div>
 	</div>
 

@@ -21,11 +21,7 @@
 /* General styles */
 
 body {
-  background: -webkit-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-  background:    -moz-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-  background:     -ms-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-  background:      -o-linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
-  background:         linear-gradient(40deg, #d1edf0 10%, #ecc8c6 100%);
+  background-color: #fff;
   font-family: 'Lato', sans-serif;
 }
 
@@ -66,7 +62,6 @@ h1, h2, h3, h4, h5, h6 {
 .navbar-default {
 
   padding-top: 5px;
-  padding-bottom: 5px;
   background-color: #fff;
 
   .navbar-nav > li > a {
@@ -100,22 +95,27 @@ h1, h2, h3, h4, h5, h6 {
 
 .message {
   box-sizing: border-box;
-  background-color: #9696a9;
+  background-color: #fff;
   border-radius: 5px;
   margin-bottom: 25px;
   margin-right: 10px;
   margin-left: 10px;
   padding: 1.4em 1.4em;
-  color: #FFF;
+  color: rgb(34, 34, 34);
   height: 100px;
-  border-bottom: 4px solid #ec6767;
+  border: 1px solid rgb(204, 204, 204);
+
+  &:hover {
+    border: 1px solid rgb(50, 147, 219);
+    border-bottom: 4px solid rgb(50, 147, 219);
+  }
 
   .message-title {
     font-size: 1.2em;
     font-family: 'Asap', sans-serif;
     font-weight: 300;
     margin-top: 0;
-    color: #FFF;
+    color: rgb(0, 121, 211);
     margin-bottom: 25px;
   }
 
@@ -196,4 +196,56 @@ h1, h2, h3, h4, h5, h6 {
 .notice {
   text-align: center;
   color: green;
+}
+
+
+.espn-btn {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 24px !important;
+  text-transform: uppercase;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 3px 16px !important;
+}
+
+.espn-btn-default {
+  background-color: transparent;
+  color: rgb(0, 121, 211) !important;
+  fill: rgb(0, 121, 211);
+  border-color: rgb(0, 121, 211);
+
+  &:hover {
+    color: rgb(50, 147, 219) !important;
+    fill: rgb(50, 147, 219);
+    border-color: rgb(50, 147, 219);
+  }
+}
+
+.espn-btn-primary {
+  background-color: rgb(0, 121, 211);
+  color: rgb(255, 255, 255) !important;
+  fill: rgb(255, 255, 255);
+  border-color: rgb(0, 121, 211);
+
+  &:hover {
+    background-color: rgb(50, 147, 219) !important;
+    color: rgb(255, 255, 255) !important;
+    fill: rgb(255, 255, 255);
+    border-color: rgb(50, 147, 219);
+  }
+}
+
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
 }
