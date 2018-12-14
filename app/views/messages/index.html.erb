@@ -1,8 +1,14 @@
-<% @messages.each do |message| %>
+<% @messages.each do |message| 
+	if message.description.present?
+    linked = URI.extract(message.description, ['http', 'https'])
+  end
+%>
 	<div class="col-md-10 col-md-offset-1">
-		<div class="message">
-			<h2 class="message-title"><%= link_to message.title, message %></h2>
+		<div class="message" style="overflow:auto;">
+      <p><img style="width: 100%;" src="<%= linked[0] %>" /></p>
+			<h1 class="message-title"><%= link_to message.title, message %></h1>
 			<p class="message-desc"><%= truncate(message.sub_title, :length => 80) %></p>
+			<p style="color: rgb(50, 147, 219);font-size: 0.7em;font-style: italic;">By <%= message.user.email %>, <%= time_ago_in_words(message.created_at) %> ago | <span style="color: #a94442"><%= message.comments.size %> comments</span></p>
 		</div>
 	</div>
 

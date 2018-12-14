@@ -5,7 +5,7 @@ CKEDITOR.editorConfig = function(config) {
   config.filebrowserImageBrowseUrl = "/ckeditor/pictures";
   config.filebrowserImageUploadUrl = "/ckeditor/pictures";
   config.filebrowserUploadUrl = "/ckeditor/attachment_files";
-  config.extraPlugins = 'emojione,dialog,dialogui';
+  // config.extraPlugins = 'emojione,dialog,dialogui';
 
   config.toolbar_Pure = [
     '/', {
