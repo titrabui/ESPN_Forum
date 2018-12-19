@@ -1,7 +1,6 @@
 <div class="comment">
+	<p class="comment-posted-by"><img class="avatar" src="<%= comment.user.avatar.url %>"> <%= comment.user.email %><span style="font-weight: normal; color: #000"> | <%= time_ago_in_words(comment.created_at) %> ago </span></p>
 	<%= raw comment.content %>
-	<p class="comment-posted-by">By <%= comment.user.email %> <%= time_ago_in_words(comment.created_at) %> ago</p>
-
 	<div class="links">
 			<% if user_signed_in? %>
 				<% if comment.user_id == current_user.id %>

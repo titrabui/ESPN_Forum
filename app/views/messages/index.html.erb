@@ -5,10 +5,12 @@
 %>
 	<div class="col-md-10 col-md-offset-1">
 		<div class="message" style="overflow:auto;">
-      <p><img style="width: 100%;" src="<%= linked[0] %>" /></p>
+      <% if linked.present? && linked.size
+				%><p class="message-image"><img style="width: 100%;" src="<%= linked.first %>" /></p>
+			<% end %>
 			<h1 class="message-title"><%= link_to message.title, message %></h1>
 			<p class="message-desc"><%= truncate(message.sub_title, :length => 80) %></p>
-			<p style="color: rgb(50, 147, 219);font-size: 0.7em;font-style: italic;">By <%= message.user.email %>, <%= time_ago_in_words(message.created_at) %> ago | <span style="color: #a94442"><%= message.comments.size %> comments</span></p>
+			<p style="color: rgb(50, 147, 219);font-size: 0.7em;font-style: italic; margin-top: 20px"><img class="avatar" src="<%= message.user.avatar.url %>"> <%= message.user.email %> | <span style="color: #a94442"><%= time_ago_in_words(message.created_at) %> ago</span> | <span style="color: #a94442"><%= message.comments.size %> comments</span></p>
 		</div>
 	</div>
 
