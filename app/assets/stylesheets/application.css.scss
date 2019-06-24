@@ -1,0 +1,278 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@import url(https://fonts.googleapis.com/css?family=Lato);
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+/* General styles */
+
+body {
+  background-color: #fff;
+  font-family: 'Lato', sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+/* Navbar styles */
+
+.navbar {
+  font-family: 'Candal', sans-serif;
+}
+
+.navbar-default {
+
+  padding-top: 5px;
+  background-color: #fff;
+
+  .navbar-nav > li > a {
+    color: #222;
+  }
+
+  .navbar-link {
+    color: #222;
+  }
+
+  .navbar-brand {
+    color: #ec6767;
+    letter-spacing: 1.1px;
+    font-size: 1.9em;
+    font-weight: bold;
+    font-style: italic;
+    font-family: serif;
+  }
+
+}
+
+
+/* Links styles */
+
+.links {
+  margin-top: 20px;
+  .btn-default {
+    color: #ec6767;
+  }
+}
+
+
+/* Message styles */
+
+.message {
+  box-sizing: border-box;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  margin-bottom: 25px;
+  margin-right: 10px;
+  margin-left: 10px;
+  padding: 1.4em 1.4em;
+  color: rgb(34, 34, 34);
+  border: 1px solid rgb(204, 204, 204);
+
+  &:hover {
+    border: 1px solid rgb(50, 147, 219);
+    border-bottom: 4px solid rgb(50, 147, 219);
+  }
+
+  .message-title {
+    font-size: 1.2em;
+    font-family: 'Asap', sans-serif;
+    font-weight: 300;
+    margin-top: 0;
+    color: rgb(0, 121, 211);
+    margin-bottom: 15px;
+  }
+
+  .message-image {
+    border-bottom: 1px solid rgb(204, 204, 204);
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+
+  .btn-custom {
+    margin-top: 12px;
+  }
+
+}
+
+.message:nth-child(4n) {
+  clear: left;
+}
+
+/* Message show-page styles */
+
+.message-show {
+  box-sizing: border-box;
+  background-color: #efefef;
+  border-radius: 5px;
+  padding: 2.0em 1.5em;
+  border-bottom: 4px solid rgb(50, 147, 219);
+  color: #000;
+  font-family: 'Asap', sans-serif;
+  font-weight: 300;
+
+  h2 {
+    margin-top: 0;
+  }
+
+  .message-desc {
+    font-size: 1.1em;
+    line-height: 1.75;
+    margin-bottom: 50px;
+  }
+
+  .message-desc {
+    font-size: 1.1em;
+    line-height: 1.75;
+    margin-bottom: 50px;
+  }
+
+  .message-posted-by {
+    color: rgb(50, 147, 219) !important;
+    font-size: 0.7em;
+    font-style: italic !important;
+  }
+
+  .reply-to-msg {
+    margin-top: 50px;
+  }
+
+}
+
+
+/* Comment styles */
+
+.comment {
+  border-top: 1px solid #ec6767;
+  border-bottom: 1px solid #ec6767;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  .comment-content {
+    font-size: 13px;
+  }
+
+  .comment-posted-by {
+    color: #ec6767;
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .links {
+    margin-top: 15px;
+    a {
+      color: rgb(50, 147, 219);;
+      margin-right: 5px;
+    }
+  }
+}
+
+.alert {
+  text-align: center;
+  color: red;
+}
+
+.notice {
+  text-align: center;
+  color: green;
+}
+
+
+.espn-btn {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 24px !important;
+  text-transform: uppercase;
+  border-width: 1px;
+  border-style: solid;
+  border-image: initial;
+  border-radius: 4px;
+  text-decoration: none;
+  padding: 3px 16px !important;
+}
+
+.espn-btn-default {
+  background-color: transparent;
+  color: rgb(0, 121, 211) !important;
+  fill: rgb(0, 121, 211);
+  border-color: rgb(0, 121, 211);
+
+  &:hover {
+    color: rgb(50, 147, 219) !important;
+    fill: rgb(50, 147, 219);
+    border-color: rgb(50, 147, 219);
+  }
+}
+
+.espn-btn-primary {
+  background-color: rgb(0, 121, 211);
+  color: rgb(255, 255, 255) !important;
+  fill: rgb(255, 255, 255);
+  border-color: rgb(0, 121, 211);
+
+  &:hover {
+    background-color: rgb(50, 147, 219) !important;
+    color: rgb(255, 255, 255) !important;
+    fill: rgb(255, 255, 255);
+    border-color: rgb(50, 147, 219);
+  }
+}
+
+.espn-btn-login {
+  width: 100%;
+}
+
+.blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+  margin-top: 10px;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #9c9b92;
+}
+
+.edit-avatar {
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border: 1px solid #9c9b92;
+}
+
+.dropdown-item {
+  display: block;
+  width: 100%;
+  padding: .25rem 1.5rem;
+  clear: both;
+  font-weight: 400;
+  color: #212529;
+  text-align: inherit;
+  white-space: nowrap;
+  background-color: transparent;
+  border: 0;
+  text-decoration: none !important;
+}
